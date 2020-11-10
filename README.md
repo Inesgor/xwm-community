@@ -11,7 +11,7 @@ When when contributing new patches for `xwm`, please consider the following:
 3.   The patch author assumes responsibility for maintaining and supporting their existing patch for the current and future releases of `xwm`.
 4.   When reporting new issues or to improve upon an existing patch, be sure to notify the patch author.
 
-## Patch Index
+### Patch Index
 
 | Patch | Author | Description |
 |-|-|-|
