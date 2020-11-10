@@ -5,8 +5,8 @@ The following is a repository for users to collaborate and share `xwm` patches. 
 ### Contribution Rules
 
 1.   The patch author assumes responsibility for the continued support and maintainenance of their new patch.
-2.   All new patches should be placed in the `patches/` folder. 
-3. When initializing a [Pull Request](https://github.com/mcpcpc/xwm-patches/pulls), you will also have to update the [Patch Index](#patch-index) section below.
+2.   All new patches shall be placed in the `patches/` folder. 
+3.   When creating a [Pull Request](https://github.com/mcpcpc/xwm-patches/pulls), remember to update the [Patch Index](#patch-index) section of this file below.
 4.   All new patches can be applied using the `-p0` flag.
 5.   When reporting existing patch [Issues](https://github.com/mcpcpc/xwm-patches/issues) or enhancement opportunities, be sure to mention the author (as mentioned in the index).
 
