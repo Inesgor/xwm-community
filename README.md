@@ -6,13 +6,13 @@ The following is a repository for users to collaborate and share `xwm` patches. 
 
 When when contributing new patches for `xwm`, please consider the following:
 
-1.   All new patches should be placed in the `patches/` folder. When initializing a Pull Request, you will also have to update the Index section below.
-2.   All new patches can be applied using the `-p0` flag.
-3.   The patch author assumes responsibility for maintaining and supporting their existing patch for the current and future releases of `xwm`.
-4.   When reporting new issues or to improve upon an existing patch, be sure to notify the patch author.
+1.   The patch author assumes responsibility for maintaining and supporting their existing patch for the current and future releases of `xwm`.
+2.   All new patches should be placed in the `patches/` folder. When initializing a Pull Request, you will also have to update the Index section below.
+3.   All new patches can be applied using the `-p0` flag.
+4.   When reporting new issues or enhancement opportinuties for existing patches, be sure to mention the patch author (as mentioned in the index).
 
 ### Patch Index
 
-| Patch | Author | Description |
+| Name | Author | Description |
 |-|-|-|
 | [example](patches/example.patch) | @mcpcpc | a brief description of the patch, functionality and usage |
