@@ -9,7 +9,7 @@ When when contributing new patches for `xwm`, please consider the following:
 1.   The patch author assumes responsibility for the continued support and maintainenance of their new patch.
 2.   All new patches should be placed in the `patches/` folder. When initializing a [Pull Request](https://github.com/mcpcpc/xwm-patches/pulls), you will also have to update the Index section below.
 3.   All new patches can be applied using the `-p0` flag.
-4.   When reporting new issues or enhancement opportinuties for existing patches, be sure to mention the patch author (as mentioned in the index).
+4.   When reporting existing patch [Issues](https://github.com/mcpcpc/xwm-patches/issues) or enhancement opportunities, be sure to mention the author (as mentioned in the index).
 
 ### Patch Index
 
