@@ -14,4 +14,4 @@ The following is a repository for users to collaborate and share `xwm` patches. 
 
 | Name | Author | Description |
 |-|-|-|
-| [example](patches/example.patch) | @mcpcpc | a brief description of the patch, functionality and usage |
+| [example](patches/example.patch) | [mcpcpc](@mcpcpc) | a brief description of the patch, functionality and usage |
