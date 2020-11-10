@@ -2,7 +2,7 @@
 
 The following is a repository for users to collaborate and share `xwm` patches. Patches can be fairly large and, therefore, will not be hosted as part of the regular git source.  For instructions on how to apply these patches, refer to the *PATCHES* section of the [README](https://raw.githubusercontent.com/mcpcpc/xwm/main/README).
 
-### Contribution Rules
+## Contribution Rules
 
 When when contributing new patches for `xwm`, please consider the following:
 
