@@ -1,8 +1,8 @@
-# xwm User Contributed Content
+# XCB Window Manager (xwm) User Contributed Content
 
 The following is a repository for users to collaborate and share `xwm` patches, media and other content. 
 
-## xwm patches
+## Patches
 
 Patches can be fairly large and, therefore, will not be hosted as part of the regular git source.  For instructions on how to apply these patches, refer to the *PATCHES* section of the [README](https://raw.githubusercontent.com/mcpcpc/xwm/main/README).
 
@@ -23,4 +23,3 @@ Patches can be fairly large and, therefore, will not be hosted as part of the re
 ## User Contributed Screeshots
 
 The following is a collective of user contributed screenshots.  If you woulld like to make your own contribution, create a new [Pull Request](https://github.com/mcpcpc/xwm-patches/pulls), place your image in the `screenshots/` directory and update the index below.
-
