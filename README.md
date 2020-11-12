@@ -24,8 +24,4 @@ Patches can be fairly large and, therefore, will not be hosted as part of the re
 
 The following is a collective of user contributed screenshots.  If you woulld like to make your own contribution, create a new [Pull Request](https://github.com/mcpcpc/xwm-patches/pulls), place your image in the `screenshots/` directory and update the index below (with a brief description).
 
-### mcpcpc
-
-I am not a `ricer`, but this was my very first screenshot taken using `xwm`.
-
-![mcpcpc-1.png](pictures/mcpcpc-1.png)
+![mcpcpc-1.png](screenshots/mcpcpc-1.png "I am not a `ricer`, but this was my very first screenshot taken using `xwm`")
