@@ -20,7 +20,7 @@ Patches can be fairly large and, therefore, will not be hosted as part of the re
 |-|-|-|
 | [example](patches/example.patch) | [mcpcpc](https://github.com/mcpcpc) | a brief description of the patch, functionality and usage |
 
-## User Contributed Screeshots
+## Screenshots
 
 The following is a collective of user contributed screenshots.  If you woulld like to make your own contribution, create a new [Pull Request](https://github.com/mcpcpc/xwm-patches/pulls), place your image in the `screenshots/` directory and update the index below (with a brief description in the Alt text).
 
