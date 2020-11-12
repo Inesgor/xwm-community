@@ -28,4 +28,4 @@ The following is a collective of user contributed screenshots.  If you woulld li
 
 I am not a `ricer`, but this was my very first screenshot taken using `xwm`.
 
-![mcpcpc-1.jpg](pictures/mcpcpc-1.jpg)
+![mcpcpc-1.png](pictures/mcpcpc-1.png)
