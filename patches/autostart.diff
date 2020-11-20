@@ -1,0 +1,107 @@
+From 012163d7d057b191acc75cbe543de235c2e2a838 Mon Sep 17 00:00:00 2001
+From: Error916 <ettorenigma@gmail.com>
+Date: Fri, 20 Nov 2020 10:56:07 +0100
+Subject: [PATCH] Autostart programs and kill them at call of killwm
+
+---
+ config.h |  8 +++++++-
+ xwm.c    | 43 +++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 50 insertions(+), 1 deletion(-)
+
+diff --git a/config.h b/config.h
+index 3838830..4430f30 100644
+--- a/config.h
++++ b/config.h
+@@ -29,9 +29,15 @@
+ #define BORDER_COLOR_UNFOCUSED 0x696969 /* 0xRRGGBB */
+ #define BORDER_COLOR_FOCUSED   0xFFFFFF /* 0xRRGGBB */
+
++/* Programs to autostart */
++static const char *const autostart[] = {
++	"st", NULL,
++	NULL /* terminate */
++};
++
+ /* ALIASED COMMANDS
+  * Each space delimited argument should be passed as an additional
+- * value to the character pointer array. For example, to run
++ * value to the character pointer array. For example, to run
+  * "foo -a bar", the array would be "{ "foo", "-a", "bar", NULL }".
+  * Since execvp() is a variadic functions, each argument pointer must
+  * be terminated by a NULL pointer.
+diff --git a/xwm.c b/xwm.c
+index a05ba02..35ae130 100644
+--- a/xwm.c
++++ b/xwm.c
+@@ -2,6 +2,10 @@
+ #include <unistd.h>
+ #include <xcb/xcb.h>
+ #include <xcb/xcb_keysyms.h>
++#include <stdlib.h>
++#include <stdio.h>
++#include <signal.h>
++#include <sys/wait.h>
+ #include "xwm.h"
+ #include "config.h"
+
+@@ -10,11 +14,49 @@ static xcb_screen_t     * scre;
+ static xcb_drawable_t     win;
+ static uint32_t           values[3];
+
++/* xwm will keep pid's of processes from autostart array and kill them at quit */
++static pid_t *autostart_pids;
++static size_t autostart_len;
++
++/* execute command from autostart array */
++static void
++autostart_exec() {
++	const char *const *p;
++	size_t i = 0;
++
++	/* count entries */
++	for (p = autostart; *p; autostart_len++, p++)
++		while (*++p);
++
++	autostart_pids = malloc(autostart_len * sizeof(pid_t));
++	for (p = autostart; *p; i++, p++) {
++		if ((autostart_pids[i] = fork()) == 0) {
++			setsid();
++			execvp(*p, (char *const *)p);
++			fprintf(stderr, "xwm: execvp %s\n", *p);
++			perror(" failed");
++			_exit(EXIT_FAILURE);
++		}
++		/* skip arguments */
++		while (*++p);
++	}
++}
++
+ static void killclient(char **com) {
+     xcb_kill_client(dpy, win);
+ }
+
+ static void closewm(char **com) {
++	size_t i;
++
++	/* kill child processes */
++	for (i = 0; i < autostart_len; i++) {
++		if (0 < autostart_pids[i]) {
++			kill(autostart_pids[i], SIGTERM);
++			waitpid(autostart_pids[i], NULL, 0);
++		}
++	}
++
+     if (dpy != NULL) {
+         xcb_disconnect(dpy);
+     }
+@@ -260,6 +302,7 @@ int main(int argc, char * argv[]) {
+             ret = die("xcb_connection_has_error\n");
+         }
+     }
++    autostart_exec();
+     if (ret == 0) {
+         scre = xcb_setup_roots_iterator(xcb_get_setup(dpy)).data;
+         setup();
+--
+2.29.2
+
