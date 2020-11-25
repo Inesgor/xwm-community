@@ -18,7 +18,6 @@ Patches can be fairly large and, therefore, will not be hosted as part of the re
 
 | Name                                | Author                                  | Description                                               |
 | -                                   | -                                       | -                                                         |
-| [example](patches/example.patch)    | [mcpcpc](https://github.com/mcpcpc)     | a brief description of the patch, functionality and usage |
 | [autostart](patches/autostart.diff) | [Error916](https://github.com/Error916) | Add utility to autostart programs                         |
 
 ## Screenshots
