@@ -27,3 +27,5 @@ The following is a collective of user contributed screenshots.  If you woulld li
 ![mcpcpc-1.png](screenshots/mcpcpc-1.png "I am not a `ricer`, but this was my very first screenshot taken using `xwm`")
 
 ![mcpcpc-2.png](screenshots/mcpcpc-2.png "grey or gray?")
+
+![mcpcpc-3.png](screenshots/mcpcpc-3.png "xwm with polybar")
