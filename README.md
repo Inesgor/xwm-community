@@ -29,3 +29,5 @@ The following is a collective of user contributed screenshots.  If you woulld li
 ![mcpcpc-2.png](screenshots/mcpcpc-2.png "grey or gray?")
 
 ![mcpcpc-3.png](screenshots/mcpcpc-3.png "xwm with polybar")
+
+![mcpcpc-4.png](screenshots/mcpcpc-3.png "xwm with lemonbar")
