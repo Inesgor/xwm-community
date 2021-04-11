@@ -32,4 +32,4 @@ The following is a collective of user contributed screenshots.  If you woulld li
 
 ![mcpcpc-4.png](screenshots/mcpcpc-4.png "xwm with lemonbar")
 
-![mcpcpc-5.png](screenshots/mcpcpc-5.png "")
+![mcpcpc-5.png](screenshots/mcpcpc-5.png "Inesgor contributed")
